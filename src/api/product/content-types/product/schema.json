@@ -28,6 +28,18 @@
     },
     "image": {
       "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "offPercent": {
+      "type": "integer"
+    },
+    "user_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "products"
     }
   }
 }

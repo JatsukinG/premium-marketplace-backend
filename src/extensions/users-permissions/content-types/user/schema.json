@@ -67,6 +67,12 @@
     },
     "phone": {
       "type": "integer"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "user_id"
     }
   }
 }
